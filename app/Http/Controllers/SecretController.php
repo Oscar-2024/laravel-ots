@@ -18,7 +18,7 @@ class SecretController extends Controller
     }
 
     public function index(): View
-    {
+    {        
         $secrets = auth()->user()->secrets;
 
         return view('secrets.index', compact('secrets'));
